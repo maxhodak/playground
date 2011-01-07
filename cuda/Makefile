@@ -1,0 +1,2 @@
+build:
+	nvcc example.cu
