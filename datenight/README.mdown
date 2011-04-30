@@ -1,3 +1,7 @@
+## Usage
+
+    $ ruby datenight.rb ideas.rb
+
 ## TODO
 
   - build covariance matrix for each `kind` attribute to `outcome` score
