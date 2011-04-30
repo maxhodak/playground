@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 $dates = nil
 
 class DateIdeas
