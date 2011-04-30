@@ -20,6 +20,12 @@ class DateIdeas
     str
   end
 
+  def choose
+    incomplete = @date_ideas.reject { |idea| !idea.complete? }
+    num_dates = incomplete.length
+    incomplete[rand(num_dates)]
+  end
+
   def self.plan(&block)
     $dates = DateIdeas.new
     $dates.instance_eval(&block)
@@ -54,6 +60,10 @@ class DateIdea
     @outcome = score
   end
 
+  def complete?
+    @outcome == nil
+  end
+
   def to_s
     attr_str = @attributes.map { |k,v|
       "#{k}: #{v}"
@@ -68,4 +78,4 @@ end
 infile = ARGV[0]
 require infile
 
-puts $dates
+puts $dates.choose
