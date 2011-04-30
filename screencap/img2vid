@@ -1,1 +1,1 @@
-ffmpeg -f image2 -i $1/* video.mpg
+ffmpeg -r 8 -i $1/%d.jpg -sameq -r 50 -s hd480 -vcodec libx264 -vpre hq -crf 5 out.mp4

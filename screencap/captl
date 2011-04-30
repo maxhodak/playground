@@ -5,5 +5,5 @@ do
   screencapture -C -t jpg -x $1/$i.jpg;
   mogrify -resize 1024x768 -quality 80% $1/$i.jpg;
   let i++;
-  sleep 0.33;
+  sleep 0.2;
 done
