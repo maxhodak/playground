@@ -78,4 +78,14 @@ end
 infile = ARGV[0]
 require infile
 
-puts $dates.choose
+if ARGV.length == 1
+  puts $dates.choose
+else
+  command = ARGV[1]
+  
+  if command == 'list'
+    puts $dates
+  else
+    puts "Usage: ./datenight.rb <ideas-file> [list]"
+  end
+end

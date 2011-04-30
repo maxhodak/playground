@@ -1,6 +1,7 @@
 ## Usage
 
     $ ruby datenight.rb ideas.rb
+    $ ruby datenight.rb ideas.rb list
 
 ## TODO
 
