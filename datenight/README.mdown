@@ -1,0 +1,4 @@
+## TODO
+
+  - build covariance matrix for each `kind` attribute to `outcome` score
+  - weight random selection by abs(cov)
